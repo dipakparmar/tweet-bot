@@ -1,0 +1,36 @@
+{
+  "name": "twitter-bot-v2",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Retweets the recent tweets filtered by hashtag",
+  "main": "dist/index.js",
+  "source": "src/index.js",
+  "bin": {
+    "tweetbot": "src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dipakparmar/twitter-bot-v2.git"
+  },
+  "author": "Dipak Parmar",
+  "license": "Apache-2.0",
+  "scripts": {
+    "watch": "parcel watch",
+    "build": "parcel build src/index.js",
+    "start": "node src/index.js",
+    "dev:start": "nodemon src/index.js start",
+    "dev:configure": "nodemon src/index.js configure"
+  },
+  "dependencies": {
+    "chalk": "^5.0.1",
+    "commander": "^9.2.0",
+    "conf": "^10.1.2",
+    "consola": "^2.15.3",
+    "twit": "^2.2.11"
+  },
+  "devDependencies": {
+    "dotenv": "^16.0.0",
+    "nodemon": "^2.0.15",
+    "parcel": "^2.4.1"
+  }
+}
