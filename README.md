@@ -4,9 +4,9 @@ tweet-bot
 Tweet Bot
 
 [![Tweet Bot](https://img.shields.io/badge/tweet--bot-brightgreen.svg)](https://dipakparmar.github.io/tweet-bot/)
-[![Version](https://img.shields.io/npm/v/tweet-bot.svg)](https://npmjs.org/package/tweet-bot)
-[![Downloads/week](https://img.shields.io/npm/dw/tweet-bot.svg)](https://npmjs.org/package/tweet-bot)
-[![License](https://img.shields.io/npm/l/tweet-bot.svg)](https://github.com/dipakparmar/tweet-bot/blob/main/package.json)
+[![Version](https://img.shields.io/npm/v/dipakparmar/tweet-bot.svg)](https://npmjs.org/package/@dipakparmar/tweet-bot)
+[![Downloads/week](https://img.shields.io/npm/dw/dipakparmar/tweet-bot)](https://npmjs.org/package/@dipakparmar/tweet-bot)
+[![License](https://img.shields.io/npm/l/dipakparmar/tweet-bot.svg)](https://github.com/dipakparmar/tweet-bot/blob/main/package.json)
 
 <!-- toc -->
 * [Usage](#usage)
@@ -15,11 +15,11 @@ Tweet Bot
 # Usage
 <!-- usage -->
 ```sh-session
-$ npm install -g tweet-bot
+$ npm install -g @dipakparmar/tweet-bot
 $ tweet-bot COMMAND
 running command...
 $ tweet-bot (--version)
-tweet-bot/0.0.0 darwin-x64 node-v16.14.0
+@dipakparmar/tweet-bot/0.0.0 darwin-x64 node-v16.14.0
 $ tweet-bot --help [COMMAND]
 USAGE
   $ tweet-bot COMMAND
