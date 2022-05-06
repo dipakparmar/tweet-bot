@@ -652,9 +652,9 @@
   version "3.0.5"
   resolved "https://registry.npmjs.org/@types/minimatch/-/minimatch-3.0.5.tgz"
 
-"@types/mocha@^9.0.0":
-  version "9.0.0"
-  resolved "https://registry.npmjs.org/@types/mocha/-/mocha-9.0.0.tgz"
+"@types/mocha@^9.1.1":
+  version "9.1.1"
+  resolved "https://registry.yarnpkg.com/@types/mocha/-/mocha-9.1.1.tgz#e7c4f1001eefa4b8afbd1eee27a237fee3bf29c4"
 
 "@types/node@*", "@types/node@^16.9.4":
   version "16.11.12"
