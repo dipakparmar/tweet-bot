@@ -19,7 +19,7 @@ $ npm install -g @dipakparmar/tweet-bot
 $ tweet-bot COMMAND
 running command...
 $ tweet-bot (--version)
-@dipakparmar/tweet-bot/0.0.1 darwin-x64 node-v16.14.0
+@dipakparmar/tweet-bot/0.0.2 darwin-x64 node-v16.14.0
 $ tweet-bot --help [COMMAND]
 USAGE
   $ tweet-bot COMMAND
@@ -75,7 +75,7 @@ EXAMPLES
   $ tweet-bot setup
 ```
 
-_See code: [dist/commands/setup.ts](https://github.com/dipakparmar/tweet-bot/blob/v0.0.1/dist/commands/setup.ts)_
+_See code: [dist/commands/setup.ts](https://github.com/dipakparmar/tweet-bot/blob/v0.0.2/dist/commands/setup.ts)_
 
 ## `tweet-bot start`
 
@@ -92,5 +92,5 @@ EXAMPLES
   $ tweet-bot start
 ```
 
-_See code: [dist/commands/start.ts](https://github.com/dipakparmar/tweet-bot/blob/v0.0.1/dist/commands/start.ts)_
+_See code: [dist/commands/start.ts](https://github.com/dipakparmar/tweet-bot/blob/v0.0.2/dist/commands/start.ts)_
 <!-- commandsstop -->

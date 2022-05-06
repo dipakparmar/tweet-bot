@@ -1,10 +1,10 @@
 {
   "name": "@dipakparmar/tweet-bot",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Tweet Bot",
   "author": "Dipak Parmar @dipakparmar",
   "bin": {
-    "twitter-bot": "./bin/run"
+    "tweet-bot": "./bin/run"
   },
   "homepage": "https://github.com/dipakparmar/tweet-bot",
   "license": "MIT",
