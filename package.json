@@ -1,36 +1,68 @@
 {
-  "name": "twitter-bot-v2",
-  "version": "0.1.0",
-  "type": "module",
-  "description": "Retweets the recent tweets filtered by hashtag",
-  "main": "dist/index.js",
-  "source": "src/index.js",
+  "name": "@dipakparmar/tweet-bot",
+  "version": "0.0.1",
+  "description": "Tweet Bot",
+  "author": "Dipak Parmar @dipakparmar",
   "bin": {
-    "tweetbot": "src/index.js"
+    "twitter-bot": "./bin/run"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/dipakparmar/twitter-bot-v2.git"
-  },
-  "author": "Dipak Parmar",
-  "license": "Apache-2.0",
-  "scripts": {
-    "watch": "parcel watch",
-    "build": "parcel build src/index.js",
-    "start": "node src/index.js",
-    "dev:start": "nodemon src/index.js start",
-    "dev:configure": "nodemon src/index.js configure"
-  },
+  "homepage": "https://github.com/dipakparmar/tweet-bot",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "repository": "dipakparmar/tweet-bot",
+  "files": [
+    "/bin",
+    "/dist",
+    "/npm-shrinkwrap.json",
+    "/oclif.manifest.json"
+  ],
   "dependencies": {
-    "chalk": "^5.0.1",
-    "commander": "^9.2.0",
+    "@oclif/core": "^1",
+    "@oclif/plugin-help": "^5",
     "conf": "^10.1.2",
-    "consola": "^2.15.3",
     "twit": "^2.2.11"
   },
   "devDependencies": {
-    "dotenv": "^16.0.0",
-    "nodemon": "^2.0.15",
-    "parcel": "^2.4.1"
-  }
+    "@oclif/test": "^2.1.0",
+    "@types/chai": "^4",
+    "@types/mocha": "^9.0.0",
+    "@types/node": "^16.9.4",
+    "@types/twit": "^2.2.30",
+    "chai": "^4",
+    "eslint": "^7.32.0",
+    "eslint-config-oclif": "^4",
+    "eslint-config-oclif-typescript": "^1.0.2",
+    "globby": "^11",
+    "mocha": "^9",
+    "oclif": "^2",
+    "shx": "^0.3.3",
+    "ts-node": "^10.2.1",
+    "tslib": "^2.3.1",
+    "typescript": "^4.4.3"
+  },
+  "oclif": {
+    "bin": "tweet-bot",
+    "dirname": "tweet-bot",
+    "commands": "./dist/commands",
+    "plugins": [
+      "@oclif/plugin-help"
+    ]
+  },
+  "scripts": {
+    "build": "shx rm -rf dist && tsc -b",
+    "lint": "eslint . --ext .ts --config .eslintrc",
+    "postpack": "shx rm -f oclif.manifest.json",
+    "posttest": "yarn lint",
+    "prepack": "yarn build && oclif manifest && oclif readme",
+    "test": "mocha --forbid-only \"test/**/*.test.ts\"",
+    "version": "oclif readme && git add README.md"
+  },
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "bugs": "https://github.com/dipakparmar/tweet-bot/issues",
+  "keywords": [
+    "oclif"
+  ],
+  "types": "dist/index.d.ts"
 }
