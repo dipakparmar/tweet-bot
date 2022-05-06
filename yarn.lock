@@ -414,7 +414,7 @@
     supports-color "^8.1.1"
     tslib "^2"
 
-"@oclif/core@^1", "@oclif/core@^1.0.10", "@oclif/core@^1.0.8", "@oclif/core@^1.2.1", "@oclif/core@^1.3.1", "@oclif/core@^1.3.6", "@oclif/core@^1.6.4":
+"@oclif/core@^1", "@oclif/core@^1.0.8", "@oclif/core@^1.2.1", "@oclif/core@^1.3.1", "@oclif/core@^1.3.6", "@oclif/core@^1.6.4":
   version "1.8.0"
   resolved "https://registry.yarnpkg.com/@oclif/core/-/core-1.8.0.tgz#ac1e63aebf8ddaf157d3664911d4a0eb2f013b6f"
   dependencies:
@@ -452,13 +452,7 @@
   version "1.0.0"
   resolved "https://registry.npmjs.org/@oclif/linewrap/-/linewrap-1.0.0.tgz"
 
-"@oclif/plugin-help@^5":
-  version "5.1.10"
-  resolved "https://registry.npmjs.org/@oclif/plugin-help/-/plugin-help-5.1.10.tgz"
-  dependencies:
-    "@oclif/core" "^1.0.10"
-
-"@oclif/plugin-help@^5.1.11":
+"@oclif/plugin-help@^5", "@oclif/plugin-help@^5.1.11":
   version "5.1.12"
   resolved "https://registry.npmjs.org/@oclif/plugin-help/-/plugin-help-5.1.12.tgz"
   dependencies:
