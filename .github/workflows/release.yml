@@ -13,7 +13,7 @@ jobs:
       matrix:
         include:
           - target: win
-            os: windows-latest
+            os: ubuntu-latest
             artifact_glob: "./dist/win32/*"
           - target: deb
             os: ubuntu-latest
