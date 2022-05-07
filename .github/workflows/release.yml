@@ -31,7 +31,7 @@ jobs:
     - run: npm install -g yarn
     - run: yarn
     - run: yarn global add oclif
-    - run: oclif pack ${{ matrix.target }} -r .
+    - run: yarn oclif pack ${{ matrix.target }} -r .
     - name: Attach artifacts to release
       uses: svenstaro/upload-release-action@v2
       with:

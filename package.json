@@ -46,7 +46,10 @@
     "commands": "./dist/commands",
     "plugins": [
       "@oclif/plugin-help"
-    ]
+    ],
+    "macos": {
+      "identifier": "io.dipakparmar.tweet-bot"
+    }
   },
   "scripts": {
     "build": "shx rm -rf dist && tsc -b",
