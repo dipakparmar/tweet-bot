@@ -8,13 +8,20 @@ on:
 jobs:
   release:
     name: release ${{ matrix.target }}
-    runs-on: ubuntu-latest
     strategy:
       fail-fast: false
       matrix:
         include:
           - target: win
+            os: windows-latest
             artifact_glob: "./dist/win32/*"
+          - target: deb
+            os: ubuntu-latest
+            artifact_glob: "./dist/deb/*"
+          - target: macos
+            os: macos-latest
+            artifact_glob: "./dist/macos/*"
+    runs-on: ${{ matrix.os }}
 
     steps:
     - run: sudo apt update
