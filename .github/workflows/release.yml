@@ -14,7 +14,7 @@ jobs:
       matrix:
         include:
           - target: win
-            artifact_glob: "./dist/win/*"
+            artifact_glob: "./dist/win32/*"
           - target: deb
             artifact_glob: "./dist/deb/*"
 
